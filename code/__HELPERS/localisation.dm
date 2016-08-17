@@ -1,13 +1,9 @@
-
-/*
-	This should be in code/setup.dm
-
 #define SANITIZE_CHAT 1
 #define SANITIZE_BROWSER 2
 #define SANITIZE_LOG 3
 #define SANITIZE_TEMP 4
 
-*/
+
 /*
 	The most used output way is text chat. So fatal letters by default should be transformed into chat version.
 	Also, it`s easier to fix all browser() calls than search all possible "[src|usr|mob|any other var] <<" calls.
@@ -42,7 +38,7 @@ var/global/list/localisation = list()
 
 	cyrillic_ya
 		letter = "ÿ"
-		chat = "&#1103;"
+		chat = "&#255;"
 		browser = "&#1103;"
 		log = "ß"
 		temp = "¶"

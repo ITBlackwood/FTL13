@@ -12,7 +12,7 @@
 		return
 
 
-	message = trim(html_encode(message))
+	message = trim(lhtml_encode(message))
 	if(!can_speak(message))
 		return
 
