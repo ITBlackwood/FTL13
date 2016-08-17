@@ -13,7 +13,7 @@ ADDRESS localhost
 PORT 3306
 
 ## Database for all SQL functions, not just feedback.
-FEEDBACK_DATABASE feedback
+FEEDBACK_DATABASE ftl_feedback
 
 ## Prefix to be added to the name of every table, older databases will require this be set to erro_
 ## if left out defaults to erro_ for legacy reasons, if you want no table prefix, give a blank prefix rather then comment out
