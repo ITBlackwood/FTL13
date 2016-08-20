@@ -196,3 +196,6 @@ Temporary Items
 !config/**/*/
 
 config/dbconfig.txt
+config/config.txt
+config/dbconfig.txt
+config/jobs.txt

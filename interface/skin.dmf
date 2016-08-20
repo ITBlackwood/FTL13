@@ -104,10 +104,6 @@ macro "default"
 		command = "a-intent right"
 		is-disabled = false
 	elem 
-		name = "CTRL+O"
-		command = "ooc"
-		is-disabled = false
-	elem 
 		name = "CTRL+Q"
 		command = ".northwest"
 		is-disabled = false
@@ -142,6 +138,10 @@ macro "default"
 	elem 
 		name = "CTRL+SHIFT+F1+REP"
 		command = ".options"
+		is-disabled = false
+	elem 
+		name = "F2"
+		command = "ooc"
 		is-disabled = false
 	elem 
 		name = "F2+REP"
@@ -318,7 +318,7 @@ macro "hotkeys"
 		command = "a-intent right"
 		is-disabled = false
 	elem 
-		name = "O"
+		name = "CTRL+O"
 		command = "ooc"
 		is-disabled = false
 	elem 
@@ -407,11 +407,15 @@ macro "hotkeys"
 		is-disabled = false
 	elem 
 		name = "F5"
-		command = "Admin-PM"
+		command = "Aghost"
 		is-disabled = false
 	elem 
 		name = "F6"
-		command = "Aghost"
+		command = "Player-Panel"
+		is-disabled = false
+	elem 
+		name = "F7"
+		command = "Admin-PM"
 		is-disabled = false
 	elem 
 		name = "F8"
