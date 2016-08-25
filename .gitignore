@@ -191,11 +191,6 @@ Temporary Items
 *.dmb
 *.lk
 
-#ignore any files in config/, except those in subdirectories.
+#ignore any files in config/
 /config/*
-!config/**/*/
 
-config/dbconfig.txt
-config/config.txt
-config/dbconfig.txt
-config/jobs.txt
