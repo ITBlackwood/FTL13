@@ -35,25 +35,6 @@
 "aj" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/cargo/office)
-"ak" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
-	req_access_txt = "0"
-	},
-/obj/docking_port/mobile/ftl{
-	dir = 2
-	},
-/obj/docking_port/stationary{
-	dheight = 8;
-	dir = 2;
-	dwidth = 49;
-	height = 73;
-	id = "ftl_start";
-	name = "Starting Area";
-	width = 97
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/cargo/office)
 "al" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -2267,6 +2248,7 @@
 "eB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/item/weapon/storage/belt/utility,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
 "eC" = (
@@ -5717,6 +5699,15 @@
 "la" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/engine/engineering)
+"lb" = (
+/obj/machinery/door/airlock/external{
+	id_tag = null;
+	name = "Port Docking Bay 2";
+	req_access_txt = "0"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/ftl/hallway/primary/starboard)
 "lc" = (
 /obj/structure/sign/bluecross_2,
 /turf/closed/wall,
@@ -5833,12 +5824,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/security/brig)
-"lr" = (
-/obj/machinery/door/airlock/glass_external{
-	name = "Escape Shuttle"
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/port)
 "ls" = (
 /obj/structure/lattice,
 /turf/open/space,
@@ -8143,13 +8128,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/maintenance/disposal)
-"qT" = (
-/obj/machinery/door/poddoor{
-	id = "trash";
-	name = "disposal bay door"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/maintenance/disposal)
 "qU" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/paper_bin{
@@ -8542,6 +8520,7 @@
 "rJ" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/item/weapon/storage/belt/utility,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "rK" = (
@@ -12549,20 +12528,6 @@
 	},
 /turf/open/floor/bluegrid,
 /area/shuttle/ftl/turret_protected/ai)
-"As" = (
-/obj/machinery/door/airlock/external{
-	name = "Engineering External Access";
-	req_access = null;
-	req_access_txt = "7;9"
-	},
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/munitions/cannon)
 "At" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
@@ -14305,12 +14270,6 @@
 "En" = (
 /turf/closed/wall/r_wall,
 /area/shuttle/ftl/crew_quarters/sleep)
-"Eo" = (
-/obj/machinery/door/airlock/glass_external{
-	name = "Escape Shuttle"
-	},
-/turf/open/floor/plasteel,
-/area/shuttle/ftl/hallway/primary/starboard)
 "Ep" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment{
@@ -14967,6 +14926,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/item/weapon/storage/belt/utility,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/engineering)
 "FB" = (
@@ -18917,6 +18877,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
+/obj/item/weapon/storage/belt/utility,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "MZ" = (
@@ -19562,6 +19523,13 @@
 /turf/open/floor/plasteel{
 	icon_state = "L3"
 	},
+/area/shuttle/ftl/hallway/primary/starboard)
+"Pg" = (
+/obj/machinery/door/airlock/glass_external{
+	name = "Escape Shuttle"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
 "Ph" = (
 /obj/structure/chair{
@@ -20256,6 +20224,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
+"RM" = (
+/obj/machinery/door/poddoor{
+	id = "trash";
+	name = "disposal bay door"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/ftl/maintenance/disposal)
 "RN" = (
 /obj/machinery/computer/camera_advanced/xenobio,
 /turf/open/floor/plasteel{
@@ -20280,6 +20256,12 @@
 	dir = 4
 	},
 /area/shuttle/ftl/engine/engine_smes)
+"RT" = (
+/obj/structure/chair/stool,
+/turf/open/floor/plasteel/warning{
+	dir = 8
+	},
+/area/shuttle/ftl/munitions)
 "RW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -20861,6 +20843,8 @@
 /obj/item/weapon/stock_parts/subspace/treatment,
 /obj/item/weapon/stock_parts/subspace/treatment,
 /obj/structure/table,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "TJ" = (
@@ -20912,6 +20896,13 @@
 	},
 /turf/open/floor/plasteel/yellow/side,
 /area/shuttle/ftl/engine/break_room)
+"TN" = (
+/obj/machinery/door/airlock/glass_external{
+	name = "Escape Shuttle"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/port)
 "TP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -21174,6 +21165,14 @@
 /turf/open/floor/plasteel/warning{
 	dir = 4
 	},
+/area/shuttle/ftl/cargo/office)
+"US" = (
+/obj/machinery/door/airlock/external{
+	name = "Supply Dock Airlock";
+	req_access_txt = "0"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
 "UV" = (
 /obj/machinery/meter,
@@ -21493,12 +21492,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
-"VZ" = (
-/obj/structure/chair/stool,
-/turf/open/floor/plasteel/warning{
-	dir = 8
-	},
-/area/shuttle/ftl/munitions)
 "Wa" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -21578,6 +21571,26 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
+"Wr" = (
+/obj/machinery/door/airlock/external{
+	name = "Supply Dock Airlock";
+	req_access_txt = "0"
+	},
+/obj/docking_port/mobile/ftl{
+	dir = 2
+	},
+/obj/docking_port/stationary{
+	dheight = 8;
+	dir = 2;
+	dwidth = 49;
+	height = 73;
+	id = "ftl_start";
+	name = "Starting Area";
+	width = 97
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/ftl/cargo/office)
 "Wt" = (
 /obj/machinery/camera{
 	c_tag = "Port Primary Hallway 4";
@@ -21748,6 +21761,21 @@
 	},
 /turf/open/floor/plasteel/yellow/side,
 /area/shuttle/ftl/engine/break_room)
+"Xf" = (
+/obj/machinery/door/airlock/external{
+	name = "Engineering External Access";
+	req_access = null;
+	req_access_txt = "7;9"
+	},
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/ftl/munitions/cannon)
 "Xk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -22078,20 +22106,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/engine/break_room)
-"Yw" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/item/weapon/folder,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/structure/table/reinforced,
-/obj/machinery/door/window/westleft{
-	name = "Cargo Desk";
-	req_access_txt = "20"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/cargo/office)
 "Yz" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -22152,6 +22166,20 @@
 	dir = 1
 	},
 /area/shuttle/ftl/engine/break_room)
+"YG" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/item/weapon/folder,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/westleft{
+	name = "Cargo Desk";
+	req_access_txt = "20"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/cargo/office)
 "YI" = (
 /obj/structure/cable{
 	d2 = 8;
@@ -22446,6 +22474,15 @@
 "Zq" = (
 /turf/closed/wall,
 /area/shuttle/ftl/storage/tech)
+"Zs" = (
+/obj/machinery/door/airlock/external{
+	id_tag = null;
+	name = "Port Docking Bay 2";
+	req_access_txt = "0"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/ftl/hallway/primary/port)
 "Zt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/warning,
@@ -52661,7 +52698,7 @@ pe
 pe
 OR
 rp
-VZ
+RT
 ss
 rS
 ab
@@ -53413,7 +53450,7 @@ aa
 aj
 be
 ai
-Yw
+YG
 ex
 be
 gK
@@ -53667,7 +53704,7 @@ aa
 aa
 aa
 aa
-ak
+Wr
 bf
 am
 dp
@@ -54181,7 +54218,7 @@ aa
 aa
 aa
 aa
-am
+US
 bf
 am
 dr
@@ -54991,7 +55028,7 @@ ym
 yM
 yM
 yM
-As
+Xf
 Ba
 Bz
 BY
@@ -55229,7 +55266,7 @@ or
 ph
 pP
 qv
-qT
+RM
 nW
 nU
 Qt
@@ -63444,7 +63481,7 @@ gg
 eT
 eT
 kR
-lr
+TN
 lZ
 mK
 nu
@@ -63478,7 +63515,7 @@ BB
 Ck
 CS
 DC
-Eo
+Pg
 Fu
 GA
 GA
@@ -64472,7 +64509,7 @@ gh
 eT
 eT
 kT
-lr
+TN
 lZ
 mK
 nw
@@ -64506,7 +64543,7 @@ BA
 Cm
 CS
 DC
-Eo
+Pg
 Fw
 GA
 GA
@@ -65245,7 +65282,7 @@ ay
 ay
 ay
 me
-mN
+Zs
 me
 ay
 ab
@@ -65275,7 +65312,7 @@ ab
 ab
 BA
 BB
-CU
+lb
 BB
 BA
 BA
