@@ -31,7 +31,7 @@
 	navbeacon.location_description = "At the "
 	navbeacon.goto_action = "Jump to navbeacon"
 	navbeacon.name = "nav beacon"
-	navbeacon.z_levels = list(1)
+	navbeacon.z_level = 1
 
 	for(var/I in 1 to rand(1, 9))
 		var/datum/planet/P = new(src)
@@ -48,7 +48,7 @@
 
 /datum/star_system/proc/get_planet_for_z(z)
 	for(var/datum/planet/P in planets)
-		if(z in P.z_levels)
+		if(P.z_level == z)
 			return P
 
 /datum/star_system/proc/generate_coords()
@@ -72,11 +72,11 @@
 	var/goto_action = "Enter orbit"
 	var/datum/star_system/parent_system
 	var/list/rings_composition
-	var/list/z_levels = list()
+	var/z_level = -1
 	var/list/docks = list()
 	var/obj/docking_port/stationary/main_dock
 	var/map_prefix = "_maps/ship_encounters/"
-	var/list/map_names = list("empty_space.dmm")
+	var/map_name = "empty_space.dmm"
 	var/spawn_ruins = 1
 	var/planet_type = "Planet"
 	var/disp_x = 0
@@ -86,8 +86,6 @@
 	var/disp_dist = 0
 	var/datum/space_station/station
 	var/keep_loaded = 0 // Adminbus var to keep planet loaded
-	var/surface_area_type
-	var/surface_turf_type
 
 /datum/planet/New(p_system)
 	parent_system = p_system
@@ -100,7 +98,7 @@
 
 	// Active telecomms relays keep this z-level loaded.
 	for(var/obj/machinery/telecomms/relay/R in telecomms_list)
-		if(!istype(R.loc.loc, /area/shuttle/ftl) && R.z in z_levels && R.on)
+		if(R.z == z_level && R.on)
 			return 0
 	return 1
 
@@ -108,12 +106,10 @@
 	name = "[parent_system.name] [index]"
 	disp_level = index
 	disp_angle = rand(0, 360)
-	map_names = list()
-	var/ringed = 0
 	if(prob(30))
-		ringed = 1
+		planet_type = "Ringed [planet_type]"
 		// Rings!
-		map_names += "rings.dmm"
+		map_name = "rings.dmm"
 
 		// Composition of rings
 		rings_composition = list()
@@ -136,31 +132,13 @@
 			rings_composition[mineral] = chance
 	else if(prob(50))
 		station = new(src)
-		map_names += "station.dmm"
-	else
-		map_names += "empty_space.dmm"
-	
-	if(prob(50))
-		// For now, all planets are LAVALAND
-		map_names += "lavaland.dmm"
-		planet_type = "Lava Planet"
-		surface_turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-		surface_area_type = /area/lavaland/surface/outdoors
-	else
-		planet_type = "Gas Giant"
-	
-	if(ringed)
-		planet_type = "Ringed [planet_type]"
+		map_name = "station.dmm"
 
 /datum/planet/proc/name_dock(var/obj/docking_port/stationary/D, var/id)
 	if(id == "main")
 		D.name = "[location_description][name]"
 	else if(id == "trade")
 		D.name = "[name] Orbital Platform"
-	else if(id == "land")
-		D.name = "Surface of [name]"
-		D.turf_type = surface_turf_type
-		D.area_type = surface_area_type
 
 /datum/space_station
 	var/list/stock = list()

@@ -30,8 +30,6 @@ var/datum/subsystem/shuttle/SSshuttle
 	var/list/shoppinglist = list()
 	var/list/requestlist = list()
 	var/list/orderhistory = list()
-	
-	var/obj/docking_port/mobile/ftl/ftl
 
 	var/datum/round_event/shuttle_loan/shuttle_loan
 
