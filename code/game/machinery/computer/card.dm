@@ -472,7 +472,7 @@ var/time_last_changed_position = 0
 				P.name = "paper- 'Crew Manifest'"
 				printing = null
 	if (modify)
-		modify.update_label()
+		modify.update_label(modify.registered_name, modify.assignment)
 	updateUsrDialog()
 	return
 
