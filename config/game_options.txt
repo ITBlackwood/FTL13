@@ -16,12 +16,12 @@ REVIVAL_POD_PLANTS 1
 REVIVAL_CLONING 1
 
 # amount of time (in hundredths of seconds) for which a brain retains the "spark of life" after the person's death (set to -1 for infinite)
-REVIVAL_BRAIN_LIFE -1
+REVIVAL_BRAIN_LIFE 10000
 
 ### RENAMING ###
 
 #Uncomment to allow cyborgs to rename themselves at roundstart.  Has no effect on roboticists renaming cyborgs the normal way.
-#RENAME_CYBORG
+RENAME_CYBORG
 
 ### OOC DURING ROUND ###
 #Comment this out if you want OOC to be automatically disabled during the round, it will be enabled during the lobby and after the round end results.
@@ -170,7 +170,7 @@ TRAITOR_OBJECTIVES_AMOUNT 2
 #PROTECT_ASSISTANT_FROM_ANTAGONIST
 
 ## If non-human species are barred from joining as a head of staff
-#ENFORCE_HUMAN_AUTHORITY
+ENFORCE_HUMAN_AUTHORITY
 
 ## If late-joining players have a chance to become a traitor/changeling
 ALLOW_LATEJOIN_ANTAGONISTS

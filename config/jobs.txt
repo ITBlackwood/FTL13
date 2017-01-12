@@ -9,38 +9,38 @@ Chief Engineer=1,1
 Research Director=1,1
 Chief Medical Officer=1,1
 
-Assistant=-1,-1
+Assistant=5,5
 
 Quartermaster=1,1
-Cargo Technician=3,2
-Shaft Miner=3,3
+Cargo Technician=1,1
+Shaft Miner=2,2
 
 Bartender=1,1
-Cook=2,1
-Botanist=3,2
-Janitor=2,1
+Cook=1,1
+Botanist=1,1
+Janitor=1,1
 
-Clown=1,1
-Mime=1,1
-Librarian=1,1
-Lawyer=2,2
+Clown=0,0
+Mime=0,0
+Librarian=0,0
+Lawyer=0,0
 
 Chaplain=1,1
 
-Station Engineer=5,5
+Station Engineer=4,4
 Atmospheric Technician=3,2
 
 Medical Doctor=5,3
 Chemist=2,2
-Geneticist=2,2
-Virologist=1,1
+Geneticist=1,1
+Virologist=0,0
 
-Scientist=5,3
-Roboticist=2,2
+Scientist=4,3
+Roboticist=1,1
 
 Warden=1,1
 Detective=1,1
-Security Officer=5,5
+Security Officer=-1,-1
 
 AI=0,1
 Cyborg=0,1
