@@ -55,6 +55,238 @@
 		
 		-->
 		<div class="commit sansserif">
+			<h2 class="date">11 January 2017</h2>
+			<h3 class="author">Danny Beedle updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">removed var edits from the mapped ftl drive and shield gen. Hopefully accurately recreates Salvage Map Revamp Pt. 2, minus the merge errors.</li>
+				<li class="bugfix">fixed icon_state of mac cannon when a loaded, non-armed shell is loaded.</li>
+				<li class="spellcheck">Technically the MAC fix falls under this. Vivalas, looking at you. You used an L instead of an I in the icon_state.</li>
+			</ul>
+
+			<h2 class="date">07 January 2017</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix lag for real this time</li>
+			</ul>
+
+			<h2 class="date">06 January 2017</h2>
+			<h3 class="author">Danny Beedle updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Chem Bag, Medbay sinks. 3 minute delay in FTL drive recharge time.</li>
+				<li class="rscadd">HoP Ptech Vendor, Autodrobe in longsleep cryo. Packing paper in cargo.</li>
+				<li class="tweak">Maint door access between Xeno and RnD, Hidden Booze-o-Mat access, upped SMES maximum output back to 200k, Shield plasma and power usage.</li>
+			</ul>
+			<h3 class="author">Qustinnus "shitposting cunt" Floyd updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a fucking painful new item for the delivery system. It'll blow you away. Literally.</li>
+			</ul>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Reverts FTL13/FTL13#342</li>
+			</ul>
+
+			<h2 class="date">04 January 2017</h2>
+			<h3 class="author">Vivalas updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">FTL jumps now have a 60 second spool up sequence before jump, which is totally not stolen from Elite: Dangerous or anything.</li>
+			</ul>
+
+			<h2 class="date">02 January 2017</h2>
+			<h3 class="author">Danny Beedle updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Polish all around. Made salvage-board PACMANs actually produce power, given anything to use said power. Replaced OP syndie turrets with AI turrets. Hope this works.</li>
+				<li class="bugfix">Fixed broken SMES units, APCs.</li>
+			</ul>
+			<h3 class="author">Qustinnus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="soundadd">Adds some beautiful sounds for the MAC cannon, ship explosions and general far explosions.</li>
+			</ul>
+
+			<h2 class="date">31 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Trailblazer is now playable, it's got all the fancy bits like wires and pipes. Also makes it the default map</li>
+			</ul>
+
+			<h2 class="date">30 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Disable carp migration and immovable rod events</li>
+			</ul>
+
+			<h2 class="date">29 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="soundadd">New AI voice</li>
+			</ul>
+
+			<h2 class="date">26 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix spacepod travel not working</li>
+				<li class="bugfix">Fix the server room being unpowered</li>
+				<li class="tweak">Make a few more areas priority (genetics, tcomms)</li>
+				<li class="bugfix">Fix kitchen shutter button access</li>
+				<li class="bugfix">Fix mech bay charging</li>
+				<li class="bugfix">Fix runtime spam from smeses without terminals</li>
+				<li class="bugfix">Fix a piping issue outside the kitchen</li>
+				<li class="bugfix">Fix engine cooling control being breakable with reconnect button</li>
+				<li class="bugfix">Fix problem where shield generators in wrecks cause permanent shields around the ship</li>
+				<li class="bugfix">Fix the door situation in medbay</li>
+				<li class="bugfix">Fixed the lag. Cause of lag, IT'S THE GOD DAMN ACTION ICONS. Now, name off a few things you'd expect to cause lag: Atmos, large amounts of space carp, maybe having to process breathing and shit, maybe a loose singularity, but no. It's just action icons being ridiculously inefficient as fuck for literally no reason. This fix basically makes them not update their overlays every single tick.</li>
+			</ul>
+
+			<h2 class="date">25 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">APC's no longer have power cells and draw their required power directly from the power net</li>
+				<li class="tweak">Power is now delivered in the following order: Emitters, phasecannon/ftl/shields, apc's, and smes charging</li>
+				<li class="tweak">Priority APC's are now higher priority than literally everything else.</li>
+				<li class="bugfix">Fix APC broken sprites</li>
+				<li class="bugfix">Fix the breaker button being broken</li>
+			</ul>
+
+			<h2 class="date">24 December 2016</h2>
+			<h3 class="author">Danny Beedle updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Semi-functionality of enemy salvage maps, turret covers, wiring, pipes.</li>
+				<li class="tweak">Set on variable of all shield generators to false. no more stuck shields.</li>
+				<li class="rscdel">Armory lockers among others, Gun Vendors.</li>
+			</ul>
+
+			<h2 class="date">21 December 2016</h2>
+			<h3 class="author">Danny Beedle updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">New Area sprites</li>
+				<li class="tweak">tweaked area icons</li>
+				<li class="bugfix">fixed areas missing on Trailblazer</li>
+				<li class="imageadd">added a lot of icons</li>
+			</ul>
+			<h3 class="author">Monkey Fixes updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Performance Improvements, Monkey Cubes now spawn monkeys that are visible</li>
+			</ul>
+
+			<h2 class="date">18 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix RCD's not working on transit space</li>
+			</ul>
+
+			<h2 class="date">17 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Remaps robotics so that it is adjacent to science, pushing the RnD server upward and tool storage to the left.</li>
+			</ul>
+
+			<h2 class="date">15 December 2016</h2>
+			<h3 class="author">EvilJackCarver updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Security vendors now contain ten boxes of 10mm ammunition. If Security graduated at the top of the Imperial Stormtrooper Marksmanship Academy, they can get more from trading stations.</li>
+			</ul>
+
+			<h2 class="date">14 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Replaces the dorm rooms with cryotubes, which can be used to free up your job slot if you need to leave the game</li>
+				<li class="rscadd">Ports ticket system from yogs. Yay!</li>
+			</ul>
+
+			<h2 class="date">13 December 2016</h2>
+			<h3 class="author">EvilJackCarver updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Security Officers and the Warden are no longer glorified mallcops, and now spawn with a lethal-capable weapon on their armour. Two magazines spawn in the backpack; more ammo can be printed from a hacked autolathe. The Taser that spawned in the armour slot previously now spawns in the backpack.</li>
+				<li class="tweak">Security belt can now holster a service pistol, magazines for said service pistol, and a Taser.</li>
+			</ul>
+
+			<h2 class="date">12 December 2016</h2>
+			<h3 class="author">Ecolli updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Tweaked munitions delivery outlet</li>
+				<li class="rscadd">Added motion cameras to maintenance next to armory</li>
+				<li class="tweak">Complete overhaul of bar/kitchen area</li>
+				<li class="rscadd">Add MO and BO manuals to relative areas</li>
+				<li class="bugfix">Fix weapon signs to be on correct layer</li>
+			</ul>
+
+			<h2 class="date">10 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Basic ship objectives</li>
+			</ul>
+
+			<h2 class="date">06 December 2016</h2>
+			<h3 class="author">EvilJackCarver updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added two more wikibooks to the code. One points to the Guide to Munitions, the other points to the Guide to Bridge Officer. Both are admin-spawn only until a time comes when they're added to the map.</li>
+				<li class="wip">The Guide to Bridge Officer wikipage is still somewhat of a work in progress.</li>
+			</ul>
+
+			<h2 class="date">04 December 2016</h2>
+			<h3 class="author">Vivalas updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Alert levels have been updates. A post will be made on the Discord regarding the update to SOP.</li>
+			</ul>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Cargo is no longer an atmospherics hellhole at roundstart.</li>
+				<li class="rscadd">Fix announcements runtiming</li>
+			</ul>
+
+			<h2 class="date">03 December 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds habitable exoplanets. Vegetation and random atmospheres and animals and ruins and shit will come later. Yell at admins to use them in events or something. Sprites by TheBimmer</li>
+			</ul>
+
+			<h2 class="date">29 November 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes parallax not working properly for the AI</li>
+				<li class="bugfix">Fixes shuttle launch animation lasting 4 seconds instead of 5 like it should</li>
+				<li class="bugfix">Fixes the broken space tiles in cargo</li>
+				<li class="bugfix">Fixes the cargo conveyor belts so they have the proper ID's and directions</li>
+				<li class="rscdel">Makes it so there is no gliding of parallax if there is more than 1 tile of movement.</li>
+			</ul>
+
+			<h2 class="date">27 November 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a windoor and a conveyor switch to the cargo-munitions conveyer</li>
+				<li class="rscadd">Adds a cooling system to Telecomms</li>
+				<li class="rscadd">Adds a pussy wagon key to janitor's closet</li>
+				<li class="rscadd">Adds an additional janitor wardrobe to closet.</li>
+				<li class="bugfix">Fixes some piping issues</li>
+				<li class="rscadd">Adds a hardsuit to atmos</li>
+			</ul>
+
+			<h2 class="date">26 November 2016</h2>
+			<h3 class="author">monster860 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds space parallax</li>
+				<li class="rscadd">Adds animations for space parallax when the ship launches or is in transit. It looks cool as fuck.</li>
+				<li class="bugfix">Fixes the launch animation.</li>
+				<li class="bugfix">Fixes some white space</li>
+				<li class="rscadd">Escape shuttle now has animation too.</li>
+			</ul>
+
+			<h2 class="date">25 November 2016</h2>
+			<h3 class="author">optional name here updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The MAC cannon now requires regular maintenance to operate correctly.</li>
+				<li class="rscadd">The MAC cannon will shock and horribly burn everyone in the room if the panel is open when it fires</li>
+				<li class="rscadd">New indicator light for the MAC cannon indicates the status of the loaded shell.</li>
+				<li class="tweak">Added relevant information to the munitions computer</li>
+			</ul>
+
+			<h2 class="date">22 November 2016</h2>
+			<h3 class="author">None updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">sparrow map content</li>
+				<li class="bugfix">patrol frigate map content</li>
+				<li class="bugfix">small freighter map content</li>
+			</ul>
+
 			<h2 class="date">19 November 2016</h2>
 			<h3 class="author">monster860 updated:</h3>
 			<ul class="changes bgimages16">
@@ -118,197 +350,6 @@
 			<h3 class="author">monster860 updated:</h3>
 			<ul class="changes bgimages16">
 				<li class="rscdel">Assistants B gone (Unless you are a new account)</li>
-			</ul>
-
-			<h2 class="date">08 November 2016</h2>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Re-adds clowns</li>
-			</ul>
-
-			<h2 class="date">06 November 2016</h2>
-			<h3 class="author">SOMETHING HORRIBLE HAS COME updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Legion is taking a vacation in the Bahamas. Something less deadly is behind the necropolis gate now.</li>
-			</ul>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fix the slime console problem.</li>
-				<li class="bugfix">Removes the revolver floating in space</li>
-				<li class="bugfix">Fixes medbay maint door access</li>
-				<li class="rscadd">Adds a positronic brain to Robotics</li>
-				<li class="bugfix">Fix broken piping in dorms/eva</li>
-				<li class="bugfix">Fix APC being in the wrong direction in EVA</li>
-				<li class="rscadd">Adds missing APC to phase cannon area</li>
-				<li class="bugfix">Fix pixel offsets on APC in emergency storage</li>
-				<li class="bugfix">Fixes z-levels being improperly unloaded, resulting in 2 z-levels getting merged together.</li>
-			</ul>
-
-			<h2 class="date">05 November 2016</h2>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">There is now a confirmation prompt when opening a MAC cannon with a loaded shell inside it, and an ADMIN LOG.</li>
-			</ul>
-
-			<h2 class="date">30 October 2016</h2>
-			<h3 class="author">LORD OF BONGOS updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Added the G.E.C.K colonization kit to cargo, containing everything needed to colonize a planet. Needs CE access to open. Or, you know, you can just welderbomb it open, but whatevs</li>
-			</ul>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Lavaland has ruins now</li>
-				<li class="rscadd">New planet type: Icy Planets</li>
-			</ul>
-
-			<h2 class="date">29 October 2016</h2>
-			<h3 class="author">BATMAN updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">The ORM can be accessed by engineering, cargo, and science, instead of just cargo.</li>
-			</ul>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Added Emergency Pressure Suits.</li>
-			</ul>
-			<h3 class="author">Yashaldie updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">fixed Borg starting cell charge</li>
-			</ul>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Actually fix the god damn docking port problem</li>
-			</ul>
-
-			<h2 class="date">28 October 2016</h2>
-			<h3 class="author">None updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">adds .dmm extension to small freighter salvage map spawner, fixing it not spawning.</li>
-				<li class="bugfix">Small Freighters are no longer the primary combat ship of the neutral sectors.</li>
-				<li class="tweak">Adjusts spawn rates after observing testing.</li>
-				<li class="tweak">Lowers sector danger level across the board, resulting in less enemy vessels.</li>
-			</ul>
-			<h3 class="author">Ecolli updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">Remaps EVA. Now has fancy double doors and it looks fancy.</li>
-				<li class="rscadd">Adds a 2nd filter to the engine room and rearranges a few things to make space</li>
-				<li class="bugfix">Fixes medical door button so it actually works now</li>
-				<li class="rscadd">Adds a double-glass-door to medbay lobby</li>
-				<li class="rscadd">Adds a prisoner pod to sec cell</li>
-				<li class="tweak">Changes contents of emergency and tool storage</li>
-				<li class="rscadd">Adds cameras to the exterior of cargo and EVA</li>
-				<li class="rscadd">Adds a power management console to the bridge</li>
-			</ul>
-			<h3 class="author">Yashaldie updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">tweaked cells for Borgs and Mechs</li>
-				<li class="bugfix">Borgs and Mech Charging rates</li>
-			</ul>
-
-			<h2 class="date">16 October 2016</h2>
-			<h3 class="author">Emergency Pressure Suit Sprites updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="imageadd">EMpressure_suit sprite</li>
-				<li class="imageadd">EMpressure_helmet sprite</li>
-			</ul>
-
-			<h2 class="date">11 October 2016</h2>
-			<h3 class="author">Changes updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Small Frieghter Salvage Map</li>
-				<li class="rscadd">Patrol Corvette Salvage Map</li>
-			</ul>
-
-			<h2 class="date">09 October 2016</h2>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fix docking ports not being created for z-levels higher than 11.</li>
-			</ul>
-
-			<h2 class="date">06 October 2016</h2>
-			<h3 class="author">Changes updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Sparrow Attack Craft Salvage Map</li>
-			</ul>
-
-			<h2 class="date">02 October 2016</h2>
-			<h3 class="author">None updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">The crew monitor minimap has had its ability to use stored images improved.</li>
-			</ul>
-
-			<h2 class="date">29 September 2016</h2>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed multiple console issues.</li>
-				<li class="bugfix">Fixed an issue when assigning a new job to ID.</li>
-				<li class="bugfix">Fixed endround greentext stating 'Marooned' when not marooned.</li>
-				<li class="bugfix">Fixed AIs unable to track mobs in transit.</li>
-				<li class="bugfix">Fixed latejoin AIs' camera view starting at latejoin landmark and not at core.</li>
-				<li class="bugfix">Fixed HoS office not having a request console.</li>
-				<li class="bugfix">Added suitable amount of space suits to engineering. No pun intended.</li>
-				<li class="bugfix">Added AI core modules into the AI upload chamber.</li>
-				<li class="bugfix">Fixed ID console having two separate bridge access levels.</li>
-			</ul>
-
-			<h2 class="date">27 September 2016</h2>
-			<h3 class="author">None updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="experiment">Atmos on planets is now more realistic. There is an unseen upper atmosphere that gas changes get carried away into, causing planet turfs to revert back to their original gas mixture.</li>
-				<li class="tweak">This should massively improve atmos run speed as all of lavaland won't be processing the moment somebody opens a door anymore</li>
-			</ul>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Adds a price multiplier for items based on systems alignment</li>
-				<li class="rscadd">Adds a system to block certain items from being purchased in hostile space</li>
-				<li class="rscadd">Adds munitions rounds and gas canisters to the list of purchasable items</li>
-				<li class="bugfix">Fixes buying stuff not depleting the stock.</li>
-			</ul>
-
-			<h2 class="date">26 September 2016</h2>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Added uniforms for MO and BO.</li>
-				<li class="tweak">Updated MO's and BO's outfits with the new uniforms.</li>
-				<li class="bugfix">Fixed bugs regarding BO naming.</li>
-				<li class="bugfix">Fixed munitions window shattering after repeated MAC shell ejection.</li>
-			</ul>
-
-			<h2 class="date">24 September 2016</h2>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed "black void squares" that appeared in certain areas after explosions.</li>
-			</ul>
-
-			<h2 class="date">21 September 2016</h2>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed phase cannon sound.</li>
-			</ul>
-
-			<h2 class="date">20 September 2016</h2>
-			<h3 class="author">CrAzYPiLoT updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="soundadd">Added a new sound for the phase cannon.</li>
-			</ul>
-			<h3 class="author">julian94 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Redundant cabling, adds power cables through the departments and</li>
-				<li class="rscadd">Adds one Supermatter Guidebook in engineering.</li>
-				<li class="rscadd">Adds one Supermatter Guidebook in the CE office.</li>
-				<li class="rscadd">Adds two Supermatter Guidebooks in the engine room.</li>
-			</ul>
-
-			<h2 class="date">19 September 2016</h2>
-			<h3 class="author">monster860 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="soundadd">New announcer voice by Qustinnus/Floyd.</li>
-			</ul>
-
-			<h2 class="date">18 September 2016</h2>
-			<h3 class="author">julian94 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">An IV drip next to the bed next to cryo.</li>
-				<li class="rscadd">An IV drip next to the surgery bed to be used there.</li>
 			</ul>
 		</div>
 
