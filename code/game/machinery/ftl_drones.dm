@@ -64,3 +64,28 @@
 	icon_state = ".50mag"
 	item_state = ".50mag"
 	var/ammo = 250
+
+/obj/machinery/drone/repair
+  name = "Repair drone Type-I"
+  desc = "Drone used for quick breach repairs"
+  icon = 'icons/obj/drones.dmi'
+  icon_state = "drone_rep"
+  health_max = 50
+  health_current = 50
+  ammo_max = 5
+  ammo_remaining = 5
+
+/obj/machinery/drone/repair/attack_hand(mob/user as mob)
+  if(ammo_remaining)
+    var/obj/item/weapon/grenade/chem_grenade/metalfoam/grenade = new /obj/item/weapon/grenade/chem_grenade/metalfoam(null)
+    ammo_remaining--
+    user.put_in_hands(grenade)
+    user << "You took the [grenade.name] from the drone!"
+
+/obj/machinery/drone/defence/attackby(obj/item/weapon/grenade/chem_grenade/metalfoam/MF, mob/user)
+  if(ammo_remaining < ammo_max)
+    ammo_remaining++
+    user << "You replaced the drone ammo!"
+    qdel(MF)
+  else
+    user << "Drone already full."

@@ -148,12 +148,19 @@ var/global/list/ftl_weapons_consoles = list()
 							continue
 						var/dist = get_dist(M.loc, target.loc)
 						shake_camera(M, dist > 20 ? 3 : 5, dist > 20 ? 1 : 3)
+					if(repaired())
+						spawn(50)
+							var/datum/effect_system/foam_spread/metal/s = new()
+							s.set_up(5, target, null, 1)
+							s.start()
+							broadcast_message("<span class=warning>Repair drone fixed hull breach at [A.name].</span>",success_sound) //so the message doesn't get there early
+
 
 /datum/subsystem/ship/proc/intercept()
 	for(var/obj/machinery/drone_station/D in world)
 		if(!istype(get_area(D), /area/shuttle/ftl))
 			continue
-		for(var/obj/machinery/drone/DD in D.current_drones)
+		for(var/obj/machinery/drone/defence/DD in D.current_drones)
 			if(!DD)
 				continue
 			if(istype(DD, /obj/machinery/drone/defence))
@@ -162,6 +169,21 @@ var/global/list/ftl_weapons_consoles = list()
 					if(DD.any_success())
 						for(var/obj/machinery/computer/ftl_drones/DC in world)
 							DC.status_update("[DD.name] deflected enemy missile!")
+						return 1
+	return 0
+
+/datum/subsystem/ship/proc/repaired()
+	for(var/obj/machinery/drone_station/D in world)
+		if(!istype(get_area(D), /area/shuttle/ftl))
+			continue
+		for(var/obj/machinery/drone/repair/DR in D.current_drones)
+			if(!DR)
+				continue
+			if(istype(DR, /obj/machinery/drone/repair))
+				if(DR.can_action())
+					DR.attempt_action()
+					for(var/obj/machinery/computer/ftl_drones/DC in world)
+						DC.status_update("[DR.name] fixed hull breach!")
 						return 1
 	return 0
 
