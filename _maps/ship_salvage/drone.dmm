@@ -233,13 +233,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_2_1)
-"O" = (
-/obj/machinery/porta_turret/ai{
-	dir = 8
-	},
-/obj/machinery/porta_turret_cover,
-/turf/open/floor/plating/airless,
-/area/ship_salvage/component/c_1_1)
 "P" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -259,51 +252,24 @@
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_2_1)
 "Q" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/window/reinforced{
+	dir = 4
 	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/component/c_2_1)
+"T" = (
 /obj/machinery/porta_turret/ai{
 	dir = 8
 	},
-/obj/machinery/porta_turret_cover,
 /turf/open/floor/plating/airless,
-/area/ship_salvage/component/c_2_1)
-"R" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/shipweapon{
-	anchored = 1;
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/ship_salvage/component/c_2_1)
-"S" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/shipweapon{
-	anchored = 1;
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/ship_salvage/component/c_2_1)
+/area/ship_salvage/component/c_1_1)
 "U" = (
 /obj/structure/cable,
 /obj/machinery/power/port_gen/pacman{
@@ -313,13 +279,36 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_2_1)
-"V" = (
+"W" = (
 /obj/machinery/porta_turret/ai{
 	dir = 8
 	},
-/obj/machinery/porta_turret_cover,
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_3_1)
+"Y" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/porta_turret/ai{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/ship_salvage/component/c_2_1)
+"Z" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel,
+/area/ship_salvage/component/c_2_1)
 
 (1,1,1) = {"
 a
@@ -359,7 +348,7 @@ a
 a
 a
 j
-O
+T
 n
 B
 J
@@ -411,7 +400,7 @@ a
 "}
 (9,1,1) = {"
 b
-R
+Z
 g
 j
 P
@@ -426,7 +415,7 @@ c
 c
 j
 r
-Q
+Y
 E
 E
 a
@@ -448,14 +437,14 @@ c
 c
 j
 q
-Q
+Y
 E
 E
 a
 "}
 (13,1,1) = {"
 b
-S
+Q
 h
 j
 q
@@ -513,7 +502,7 @@ a
 a
 a
 j
-V
+W
 t
 H
 K
