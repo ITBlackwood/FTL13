@@ -9,7 +9,6 @@
   var/deployed = 0
   var/ammo_max
   var/ammo_remaining
-  var/ammo_inside
   var/hit_chance = 1
 
 /obj/machinery/drone/proc/can_action()
@@ -35,26 +34,25 @@
   health_max = 50
   health_current = 50
   ammo_max = 250
-  ammo_inside = 1
   ammo_remaining = 250
 
 /obj/machinery/drone/defence/attack_hand(mob/user as mob)
-  if(ammo_inside)
+  if(ammo_remaining)
     var/obj/item/weapon/twohanded/required/drone_ammo_case/pack = new /obj/item/weapon/twohanded/required/drone_ammo_case(null)
     pack.ammo = ammo_remaining
     ammo_remaining = 0
-    ammo_inside = 0
     user.put_in_hands(pack)
     user << "You took the ammo from the drone!"
 
-/obj/machinery/drone/defence/attackby(obj/item/weapon/twohanded/required/drone_ammo_case/B, mob/user)
-  if(!ammo_inside)
-    ammo_remaining = B.ammo
-    user << "You replaced the drone ammo!"
-    ammo_inside = 1
-    qdel(B)
-  else
-    user << "Pack was already installed."
+/obj/machinery/drone/defence/attackby(obj/item/weapon/W, mob/user, params)
+  if(istype(W, /obj/item/weapon/twohanded/required/drone_ammo_case))
+    var/obj/item/weapon/twohanded/required/drone_ammo_case/B = W
+    if(!ammo_remaining)
+      ammo_remaining = B.ammo
+      user << "You replaced the drone ammo!"
+      qdel(W)
+    else
+      user << "Pack was already installed."
 
 
 /obj/item/weapon/twohanded/required/drone_ammo_case
@@ -80,12 +78,13 @@
     var/obj/item/weapon/grenade/chem_grenade/metalfoam/grenade = new /obj/item/weapon/grenade/chem_grenade/metalfoam(null)
     ammo_remaining--
     user.put_in_hands(grenade)
-    user << "You took the [grenade.name] from the drone!"
+    user << "You took the [grenade] from the drone!"
 
-/obj/machinery/drone/defence/attackby(obj/item/weapon/grenade/chem_grenade/metalfoam/MF, mob/user)
-  if(ammo_remaining < ammo_max)
-    ammo_remaining++
-    user << "You replaced the drone ammo!"
-    qdel(MF)
-  else
-    user << "Drone already full."
+/obj/machinery/drone/defence/attackby(obj/item/weapon/W, mob/user, params)
+  if(istype(W, /obj/item/weapon/grenade/chem_grenade/metalfoam))
+    if(ammo_remaining < ammo_max)
+      ammo_remaining++
+      user << "You replaced the drone ammo!"
+      qdel(W)
+    else
+      user << "Drone already full."
