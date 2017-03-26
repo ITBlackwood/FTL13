@@ -65,7 +65,6 @@
 #include "code\__HELPERS\globalaccess.dm"
 #include "code\__HELPERS\icon_smoothing.dm"
 #include "code\__HELPERS\icons.dm"
-#include "code\__HELPERS\lists.dm"
 #include "code\__HELPERS\localisation.dm"
 #include "code\__HELPERS\maths.dm"
 #include "code\__HELPERS\matrices.dm"
