@@ -1,4 +1,3 @@
-
 var/datum/subsystem/ship/SSship
 
 var/global/list/ftl_weapons_consoles = list()

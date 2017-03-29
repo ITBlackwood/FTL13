@@ -284,6 +284,7 @@
 			/obj/item/weapon/storage/backpack/dufflebag/syndie/c20rbundle = 1,
 			/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo = 2,
 			/obj/item/weapon/storage/backpack/dufflebag/syndie/surgery = 2,
+			/obj/machinery/drone/repair = 2,
 			"" = 20, //estimate
 			)
 
